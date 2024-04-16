@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <style>
+       footer{
+           background: cornflowerblue;
+           color: white;
+           padding: 40px;
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+       }
+      #div1 p:hover, #div2 p:hover {
+          text-decoration-line: underline;
+      }
+      .flex-container {
+           display: flex;
+           }
+
+       .flex-container > div {
+           margin: 10px;
+           padding: 20px;
+
+       }
+div{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+   img{
+       margin: 10px;
+   }
+   #img1:hover{
+       background-image: url("images/you1.png");
+   }
+    </style>
+
+</head>
+<body>
+
+</body>
+
+<footer>
+    <div class="flex-container">
+<div id="div1" style="margin-right: 20%; margin-left: 5%">
+    <p>Home</p>
+    <p>About</p>
+    <p>Gallery</p>
+    <p>News</p>
+</div>
+    <div id="div2">
+        <p>Blog</p>
+        <p>FAQ</p>
+        <p>Contacts</p>
+        <p>Privacy & cookies</p>
+    </div>
+        <div id="div3" style="padding-left: 20%; padding-top: 5%">
+            <img src="images/fac.png" alt="error" />
+            <img src="images/insta.png" alt="error" />
+            <img id="img1" src="images/yout.png" alt="error" />
+        </div>
+
+
+    </div>
+    <hr/>
+<p style="padding: 10px; text-align: center; font-size: 16px"> Copyright &#169 Company 2018 - 2019   </p>
+
+</footer>
+</html>
