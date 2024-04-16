@@ -7,11 +7,12 @@
        footer{
            background: cornflowerblue;
            color: white;
-           padding: 40px;
+           padding: 50px;
            position: fixed;
            bottom: 0;
            width: 100%;
-       }
+           }
+
       #div1 p:hover, #div2 p:hover {
           text-decoration-line: underline;
       }
@@ -22,7 +23,7 @@
        .flex-container > div {
            margin: 10px;
            padding: 20px;
-
+           flex: 1;
        }
 div{
     font-weight: bold;
@@ -36,16 +37,17 @@ div{
    #img1:hover{
        background-image: url("images/you1.png");
    }
+
     </style>
 
 </head>
-<body>
+<body style="margin: 0">
 
 </body>
 
 <footer>
     <div class="flex-container">
-<div id="div1" style="margin-right: 20%; margin-left: 5%">
+<div id="div1">
     <p>Home</p>
     <p>About</p>
     <p>Gallery</p>
@@ -57,7 +59,7 @@ div{
         <p>Contacts</p>
         <p>Privacy & cookies</p>
     </div>
-        <div id="div3" style="padding-left: 20%; padding-top: 5%">
+        <div id="div3" style="margin-top: 5%">
             <img src="images/fac.png" alt="error" />
             <img src="images/insta.png" alt="error" />
             <img id="img1" src="images/yout.png" alt="error" />
@@ -66,7 +68,7 @@ div{
 
     </div>
     <hr/>
-<p style="padding: 10px; text-align: center; font-size: 16px"> Copyright &#169 Company 2018 - 2019   </p>
+<p style="padding-bottom: 10px; text-align: center; font-size: 16px;"> Copyright &#169 Company 2018 - 2019 </p>
 
 </footer>
 </html>
