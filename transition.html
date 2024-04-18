@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Html</title>
+    <style>
+      /* div{
+            width: 300px;
+            height: 200px;
+            background: cornflowerblue;
+           transition-property: height;
+           transition-duration: 2s;
+           transition-timing-function: linear;
+           transition-delay: 2.5s;
+            !*transition: height 2s ease-in-out 3s;*!
+        }
+        div:hover{
+            height: 400px;
+      }
+        img{
+            height: 100px;
+            width: 100px;
+            transition-property: height;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+          !*  transition-delay: 2s;*!
+            !*transition: height 3s ease-in-out;*!
+        }
+        img:hover{
+            height: 200px;
+
+        }*/
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: darkred;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          text-align: right;
+          padding: 14px 16px;
+          text-decoration: overline;
+      }
+
+      /* Change the link color to #111 (black) on hover */
+      li a:hover:not(.active-link a) {
+          background-color: red;
+      }
+      .active-link a{
+          background: cornflowerblue;
+          color: black;
+      }
+
+    </style>
+
+</head>
+<body>
+<ul>
+    <li style="float: right"><a href="">Item1</a></li>
+    <li class="active-link"><a href="">Item2 </a></li>
+    <li><a href="">Item3</a></li>
+</ul>
+
+<!--a href="https://google.com">Link to Google</a><br/>
+<div>
+ &lt;!&ndash;   <img src="images/i.webp" alt="Error">&ndash;&gt;
+</div>-->
+
+</body>
+</html>
