@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex table</title>
+  <style>
+      table,th,td{
+      /*border-bottom: 1px solid white;*/
+          border-collapse: collapse;
+          padding: 10px 5px;
+      }
+      thead{
+          border-bottom: 1px solid white;
+      }
+      tfoot{
+          border-top: 1px solid white;
+      }
+     /* tr:nth-child(even){
+          background: darkgrey;
+      }*/
+     /* table {
+          width: 20%;*/
+
+      caption{
+          text-align: right;
+          font-family: sans-serif;
+          font-weight: bolder;
+          color: black;
+          margin: 10px 0;
+      }
+/*tr{
+    border-left: 2px dashed dimgray;
+    border-right: 2px dashed dimgray;
+}*/
+      table{
+          width: 60%;
+      }
+      th{
+          color: white;
+          font-weight: bold;
+      }
+      td{
+          color: white;
+          text-align: center;
+          width: 15%;
+      }
+      td:first-child{
+          color: black;
+          text-align: left;
+          width: auto;
+      }
+      th:first-child{
+          color: black;
+          width: auto;
+      }
+      tfoot{
+          color: white;
+          font-weight: bolder;
+      }
+      tfoot tr td:first-child{
+          text-align: center;
+      }
+  </style>
+
+</head>
+<body>
+<table>
+    <caption>SPECIFICATION & PRICE</caption>
+    <colgroup>
+        <col span="1" style="background-color: dimgray"/>
+        <col span="1" style="background-color: cyan"/>
+        <col span="1" style="background-color: forestgreen"/>
+        <col span="1" style="background-color: chocolate"/>
+        <col span="1" style="background-color: brown"/>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>SPECIFICATION</th>
+        <th>FREE</th>
+        <th>BASIC</th>
+        <th>STANDART</th>
+        <th>PREMIUM</th>
+    </tr>
+    </thead>
+<tbody>
+<tr>
+    <td>Lorem ipsum dolor</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+</tr>
+<tr>
+    <td>Ratione deserunt modi</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+</tr>
+<tr>
+    <td>Vel maiores odio</td>
+    <td>&#8854</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+</tr>
+<tr>
+    <td>Minus vel aperiam natus</td>
+    <td>&#8854</td>
+    <td>&#8854</td>
+    <td>&#8853</td>
+    <td>&#8853</td>
+</tr>
+<tr>
+    <td>Provid minima sapiente</td>
+    <td>&#8854</td>
+    <td>&#8854</td>
+    <td>&#8854</td>
+    <td>&#8853</td>
+</tr>
+<tr>
+    <td>Eveniet eaque excepturi</td>
+    <td>&#8854</td>
+    <td>&#8854</td>
+    <td>&#8854</td>
+    <td>&#8853</td>
+</tr>
+</tbody>
+   <tfoot>
+   <tr>
+       <td>PRICE</td>
+       <td>$ 0.00</td>
+       <td>$ 9.99</td>
+       <td>$ 19.99</td>
+       <td>$ 29.99</td>
+   </tr>
+   </tfoot>
+
+</table>
+</body>
+</html>
