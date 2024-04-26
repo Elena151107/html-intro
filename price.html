@@ -8,20 +8,28 @@
     #div1,#div2,#div3,#div4{
       width: 200px;
       height: 300px;
+      display: inline-block;
       border: 1px solid #888888;
       border-radius: 10px;
-      margin: 5px;
+      margin-top: 20px;
+      margin-left: 10px;
       font-weight: bold;
       font-family: sans-serif;
       text-align: center;
       box-shadow: 0 0 10px #888888;
-      display: inline-block;
       transition: width 1s, height 1s;
       transition-timing-function: linear;
     }
     #div1:hover,#div2:hover,#div3:hover,#div4:hover{
       width: 220px;
       height: 320px;
+      .div5{
+        width: 100px;
+        height: 30px;
+        margin-left: 65px;
+        transition: width 1s, height 1s;
+        transition-timing-function: linear;
+      }
     }
     p{
       font-weight: bolder;
@@ -44,9 +52,9 @@
       color: black;
       font-size: 12px;
     }
-    .diV{
+    .div5{
       width: 90px;
-      height: 30px;
+      height: 25px;
       color: white;
       border-radius: 5px;
       font-weight: bold;
@@ -56,22 +64,24 @@
       margin-left: 60px;
       margin-top: 15px;
       padding-top: 15px;
-      position: sticky;
+
     }
 
   </style>
 </head>
 <body>
 
-<p id="div1">
-<p class="p1"> ENTERPRISE</p>
-<hr style="border: 2px solid #C73756"/>
-<p class="p2"> $69</p>
-<p class="p3"> per month</p>
-<p class="p4">10GB disk space<br/> 100GB monthly bandwidth<br/>20 email accounts<br/>Unlimited subdomens</p>
-<div class="diV" style="background-color: #C73756;">BUY</div>
+<div id="div1">
+  <p class="p1">ENTERPRISE</p>
+  <hr style="border: 2px solid #C73756"/>
+  <p class="p2"> $69</p>
+  <p class="p3"> per month</p>
+  <p class="p4">10GB disk space<br/>
+    100GB monthly bandwidth<br/>
+    20 email accounts<br/>
+    Unlimited subdomens</p>
+  <div class="div5" style="background-color: #C73756">BUY</div>
 </div>
-
 <div id="div2">
   <p class="p1">   PROFESSIONAL</p>
   <hr style="border: 2px solid #D7913B"/>
@@ -81,7 +91,7 @@
     60GB monthly bandwidth<br/>
     10 email accounts<br/>
     Unlimited subdomens</p>
-  <div class="diV" style="background-color: #D7913B">BUY</div>
+  <div class="div5" style="background-color: #D7913B">BUY</div>
 </div>
 
 <div id="div3">
@@ -93,7 +103,7 @@
     30GB monthly bandwidth<br/>
     5 email accounts<br/>
     Unlimited subdomens</p>
-  <div class="diV" style="background-color: #2B6689">BUY</div>
+  <div class="div5" style="background-color: #2B6689">BUY</div>
 </div>
 
 <div id="div4">
@@ -105,7 +115,8 @@
     30GB monthly bandwidth<br/>
     5 email accounts<br/>
     Unlimited subdomens</p>
-  <div class="diV" style="background-color: #63BB34">BUY</div>
+  <div class="div5" style="background-color: #63BB34">BUY</div>
 </div>
+
 </body>
 </html>
