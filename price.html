@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Price</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>Price</title>
+  <style>
 
-   #div1,#div2{
-       width: 120px;
-       height: 200px;
-       border: 1px solid black;
-       border-radius: 10px;
-       margin: 10px;
-       font-weight: bold;
-       font-family: sans-serif;
-       text-align: center;
-       box-shadow: 0 0 10px ;
-       display: inline-block;
-       }
-   p{
-       font-weight: bolder;
-       margin: 0;
-   }
-#p1{
-    font-size: x-large;
-}
-#p2{
-    color: darkgrey;
-}
-    </style>
+    #div1,#div2,#div3,#div4{
+      width: 200px;
+      height: 300px;
+      border: 1px solid #888888;
+      border-radius: 10px;
+      margin: 5px;
+      font-weight: bold;
+      font-family: sans-serif;
+      text-align: center;
+      box-shadow: 0 0 10px #888888;
+      display: inline-block;
+      transition: width 1s, height 1s;
+      transition-timing-function: linear;
+    }
+    #div1:hover,#div2:hover,#div3:hover,#div4:hover{
+      width: 220px;
+      height: 320px;
+    }
+    p{
+      font-weight: bolder;
+    }
+    .p1{
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .p2{
+      font-size: 40px;
+      padding: 0;
+      margin: 0;
+    }
+    .p3{
+      color: #D4D4D3;
+      padding: 0;
+      margin: 0;
+    }
+    .p4{
+      color: black;
+      font-size: 12px;
+    }
+    .diV{
+      width: 90px;
+      height: 30px;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: sans-serif;
+      text-align: center;
+      margin-left: 60px;
+      margin-top: 15px;
+      padding-top: 15px;
+      position: sticky;
+    }
+
+  </style>
 </head>
 <body>
 
-<div id="div1">
-    <h5> ENTERPRISE</h5>
-    <hr style="border: 1px solid crimson"/>
-    <p id="p1"> $ 69</p>
-    <p id="p2"> per month</p>
-
+<p id="div1">
+<p class="p1"> ENTERPRISE</p>
+<hr style="border: 2px solid #C73756"/>
+<p class="p2"> $69</p>
+<p class="p3"> per month</p>
+<p class="p4">10GB disk space<br/> 100GB monthly bandwidth<br/>20 email accounts<br/>Unlimited subdomens</p>
+<div class="diV" style="background-color: #C73756;">BUY</div>
 </div>
 
+<div id="div2">
+  <p class="p1">   PROFESSIONAL</p>
+  <hr style="border: 2px solid #D7913B"/>
+  <p class="p2"> $29</p>
+  <p class="p3"> per month</p>
+  <p class="p4">5GB disk space<br/>
+    60GB monthly bandwidth<br/>
+    10 email accounts<br/>
+    Unlimited subdomens</p>
+  <div class="diV" style="background-color: #D7913B">BUY</div>
 </div>
 
+<div id="div3">
+  <p class="p1">   PROFESSIONAL</p>
+  <hr style="border: 2px solid #2B6689"/>
+  <p class="p2"> $19</p>
+  <p class="p3"> per month</p>
+  <p class="p4">3GB disk space<br/>
+    30GB monthly bandwidth<br/>
+    5 email accounts<br/>
+    Unlimited subdomens</p>
+  <div class="diV" style="background-color: #2B6689">BUY</div>
+</div>
 
-    <div id="div2">
-        <h5>   PROFESSIONAL</h5>
-        <hr style="border: 1px solid burlywood"/>
-    </div>
-
+<div id="div4">
+  <p class="p1">   PROFESSIONAL</p>
+  <hr style="border: 2px solid #63BB34"/>
+  <p class="p2"> $19</p>
+  <p class="p3"> per month</p>
+  <p class="p4">3GB disk space<br/>
+    30GB monthly bandwidth<br/>
+    5 email accounts<br/>
+    Unlimited subdomens</p>
+  <div class="diV" style="background-color: #63BB34">BUY</div>
 </div>
 </body>
 </html>
